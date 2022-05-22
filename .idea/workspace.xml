@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d7a8598-0bf7-4cfb-987d-5ab80c39f634" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/FileHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bug.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -66,11 +67,19 @@
       <option name="project" value="LOCAL" />
       <updated>1653170534541</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finish Bug class + test adding">
+      <created>1653229559102</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653229559102</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add comment for code to add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment for code to add" />
+    <MESSAGE value="Finish Bug class + test adding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Bug class + test adding" />
   </component>
 </project>

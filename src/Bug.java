@@ -1,18 +1,19 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Bug {
-    int bugID;
+    String bugID;
     String status;
     String title;
     String description;
-    LocalDate dateCreated;
+    LocalDateTime dateCreated;
     String createdBy;
     String assignedTo;
     String priority;
     String category;
 
-    public Bug(int bugID, String status, String title, String description, LocalDate dateCreated,
+    public Bug(String bugID, String status, String title, String description, LocalDateTime dateCreated,
                String createdBy, String assignedTo, String priority, String category) {
         this.bugID = bugID;
         this.status = status;
@@ -25,11 +26,11 @@ public class Bug {
         this.category = category;
     }
 
-    public int getBugID() {
+    public String getBugID() {
         return bugID;
     }
 
-    public void setBugID(int bugID) {
+    public void setBugID(String bugID) {
         this.bugID = bugID;
     }
 
@@ -57,11 +58,11 @@ public class Bug {
         this.description = description;
     }
 
-    public LocalDate getDateCreated() {
+    public LocalDateTime getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(LocalDate dateCreated) {
+    public void setDateCreated(LocalDateTime dateCreated) {
         this.dateCreated = dateCreated;
     }
 
