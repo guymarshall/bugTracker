@@ -1,16 +1,99 @@
-public class Bug {
-}
+import java.time.LocalDate;
+import java.util.Date;
 
-/*internal class Bug
-{
-    public int BugID { get; set; }
-    public string Status { get; set; }
-    public string Title { get; set; }
-    public string Description { get; set; }
-    public DateTime DateCreated { get; set; }
-    public DateTime DateUpdated { get; set; }
-    public string CreatedBy { get; set; }
-    public string AssignedTo { get; set; }
-    public string Priority { get; set; }
-    public string Category { get; set; }
-}*/
+public class Bug {
+    int bugID;
+    String status;
+    String title;
+    String description;
+    LocalDate dateCreated;
+    String createdBy;
+    String assignedTo;
+    String priority;
+    String category;
+
+    public Bug(int bugID, String status, String title, String description, LocalDate dateCreated,
+               String createdBy, String assignedTo, String priority, String category) {
+        this.bugID = bugID;
+        this.status = status;
+        this.title = title;
+        this.description = description;
+        this.dateCreated = dateCreated;
+        this.createdBy = createdBy;
+        this.assignedTo = assignedTo;
+        this.priority = priority;
+        this.category = category;
+    }
+
+    public int getBugID() {
+        return bugID;
+    }
+
+    public void setBugID(int bugID) {
+        this.bugID = bugID;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public LocalDate getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setDateCreated(LocalDate dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public String getAssignedTo() {
+        return assignedTo;
+    }
+
+    public void setAssignedTo(String assignedTo) {
+        this.assignedTo = assignedTo;
+    }
+
+    public String getPriority() {
+        return priority;
+    }
+
+    public void setPriority(String priority) {
+        this.priority = priority;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+}
