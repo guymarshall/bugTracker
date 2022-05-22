@@ -3,30 +3,51 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.Scanner;
 import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("debug: running program");
+        System.out.println("--- Bug tracker ---");
+        Scanner scanner = new Scanner(System.in);
 
         String bugID = UUID.randomUUID().toString();
         String status = "Open";
-        String title = "Computer keeps crashing!!";
-        String description = "When I turn the computer on, it crashes and shows a blue screen";
+
+        System.out.print("Title: ");
+        String title = scanner.nextLine();
+
+        System.out.print("Description: ");
+        String description = scanner.nextLine();
         LocalDateTime dateCreated = LocalDateTime.now();
-        String createdBy = "Steven";
-        String assignedTo = "Tom";
-        String priority = "Urgent";
-        String category = "Hardware fault";
+
+        System.out.print("Created by: ");
+        String createdBy = scanner.nextLine();
+
+        System.out.print("Assigned to: ");
+        String assignedTo = scanner.nextLine();
+
+        System.out.print("Priority: ");
+        String priority = scanner.nextLine();
+
+        System.out.print("Category: ");
+        String category = scanner.nextLine();
 
         Bug bug = new Bug(bugID, status, title, description, dateCreated, createdBy, assignedTo, priority, category);
 
-        // String fileContents = bug.generateFileContents(bug);
-        String filename = String.format("%s_%s_%s.txt", bugID, dateCreated, createdBy);
+        String[] bugDetails = {bugID, title, description, dateCreated.toString(), createdBy, assignedTo, priority, category};
 
-        System.out.println(filename);
+        BugFileHandler bugFileHandler = new BugFileHandler();
+        String fileContents = bugFileHandler.generateFileContents(bugDetails);
+
+        System.out.println(fileContents);
+
+//        String filename = String.format("%s_%s.txt", bugID, dateCreated);
+
+        System.out.println(bugID);
 
         //save file with bugID_dateTime_createdBy as filename
+        bugFileHandler.saveFile(bugID, fileContents);
 
         System.out.println(bug);
         System.out.println(dateCreated);
