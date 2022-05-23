@@ -1,17 +1,15 @@
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class Bug {
-    String bugID;
-    String status;
-    String title;
-    String description;
-    LocalDateTime dateCreated;
-    String createdBy;
-    String assignedTo;
-    String priority;
-    String category;
+    private String bugID;
+    private String status;
+    private String title;
+    private String description;
+    private LocalDateTime dateCreated;
+    private String createdBy;
+    private String assignedTo;
+    private String priority;
+    private String category;
 
     public Bug(String bugID, String status, String title, String description, LocalDateTime dateCreated,
                String createdBy, String assignedTo, String priority, String category) {
