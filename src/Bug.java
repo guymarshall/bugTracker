@@ -24,6 +24,10 @@ public class Bug {
         this.category = category;
     }
 
+    public String[] getBugDetails() {
+        return new String[]{bugID, title, description, dateCreated.toString(), createdBy, assignedTo, priority, category};
+    }
+
     public String getBugID() {
         return bugID;
     }

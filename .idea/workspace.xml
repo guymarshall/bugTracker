@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d7a8598-0bf7-4cfb-987d-5ab80c39f634" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BugFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BugFileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653252035768</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Improve layout of BugFileHandler and Bug">
+      <created>1653332445886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653332445886</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -99,6 +105,7 @@
     <MESSAGE value="Finish Bug class + test adding" />
     <MESSAGE value="Add FileHandler class + tweak running of Main and Bug classes" />
     <MESSAGE value="Enable file writing and change gitignore to ignore files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enable file writing and change gitignore to ignore files" />
+    <MESSAGE value="Improve layout of BugFileHandler and Bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve layout of BugFileHandler and Bug" />
   </component>
 </project>

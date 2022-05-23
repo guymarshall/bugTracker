@@ -35,7 +35,7 @@ public class Main {
 
         Bug bug = new Bug(bugID, status, title, description, dateCreated, createdBy, assignedTo, priority, category);
 
-        String[] bugDetails = {bugID, title, description, dateCreated.toString(), createdBy, assignedTo, priority, category};
+        String[] bugDetails = bug.getBugDetails();
 
         BugFileHandler bugFileHandler = new BugFileHandler();
         String fileContents = bugFileHandler.generateFileContents(bugDetails);
