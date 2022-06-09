@@ -30,3 +30,6 @@ bin/
 
 ### Text files ###
 *.txt
+
+### Class files ###
+/target
